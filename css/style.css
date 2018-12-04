@@ -1,9 +1,51 @@
-.main-menu__item{
-    font-size: 10px;
-    text-transform: uppercase;
+body{
+    font-family: Geometos;
+}
+
+/* Font to page */
+@font-face {
+    font-family: Geometos;
+    src: url('fonts/Geometos.ttf');
+}
+
+/* header begin */
+.main-menu__anchor{
     text-decoration: none;
 }
 
+.main-menu__item{
+    font-size: 10px;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+
+/* header end */
+
+/* body begin */
 .main-title{
     text-transform: uppercase;
+    text-align: center;
 }
+
+.item_lista{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.item_image{
+    width: 400px;
+    height: 400px;
+}
+
+/* body end */
+
+/* footer begin */
+.footer{
+    text-align: center;
+
+}
+.footer_list{
+    list-style-type: none;
+}
+/* footer end */
