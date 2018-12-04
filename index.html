@@ -1,26 +1,49 @@
 <!DOCTYPE html>
-<html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Reanimator Studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="main.js"></script>
 </head>
 <body>
+    <header class="header">
+        <div class="container"> <!-- Start Header Container-->
+            <h1 class="logo">reanimator studio</h1>
+            <nav class="main-menu main-menu__btn--closed">
+                <button class="main-menu__btn main-menu__close">Hamburguer icon</button>
+                <ul class="main-menu__list">
+                    <li><a class="main-menu__item" href="about.html"></a>about</li>
+                    <li><a class="main-menu__item" href="portfolio.html"></a>portfolio</li>
+                    <li><a class="main-menu__item" href="contact.html"></a>contact</li>
+                </ul>
+            </nav>
+        </div> <!-- End Header Container-->
+    </header>
+
     <h1>publications</h1>
 
+    <img src="/img/20_monster-mash.jpg" alt="monster-mash"/>
     <h4>frank n. stein rocks!</h4>
     <h4>duration: 3 min.</h4>
     <h4>a tribute to all horror movies.</h4>
 
+    <img src="/img/rs_soultraveler-cover.jpg" alt="soultraveler"/>
     <h4>soul traveller top 5.</h4>
     <h4>duration: 40 sec.</h4>
     <h4>institutional video for a travel company</h4>
 
-    <footer>
+    <footer class="footer">
         2018 reanimator studio
+        <div class="footer__column">
+            <ul class="footer__list-links">
+                <li><a href="https://www.facebook.com/depaula.conrado" target="_blank"><img src="img/facebook_icon.png" alt="face_icon"></a></li>
+                <li><a href="https://www.instagram.com/reanimatorstudio/" target="_blank"><img src="img/instagram_icon.png" alt="insta_icon"></a></li>
+                <li><a href="https://vimeo.com/reanimatorstudio" target="_blank"><img src="img/vimeo_icon.png" alt="vimeo_icon"></a></li>
+            </ul>
+        </div>
     </footer>
+
 </body>
 </html>
