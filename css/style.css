@@ -1,14 +1,61 @@
 body{
     font-family: Geometos;
+    font-weight: 500;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 /* Font to page */
 @font-face {
     font-family: Geometos;
-    src: url('fonts/Geometos.ttf');
+    src: url('../fonts/Geometos.ttf');
 }
 
 /* header begin */
+.header{
+    background-color: #fff;
+    padding: 15px;
+}
+
+.logo{
+    background-image: url('../img/logo_small_ed.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 120px;
+    height: 53px;
+    text-indent: -9999px;
+    margin: 0;
+}
+
+.main-menu__btn{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    background-color: #fff;
+    background-image: url('../img/mainmenu-btn.png');
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    border-color: #c4c4c4;
+    border-style: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+.main-menu__btn--close{
+    background-position: -48px 7px;
+}
+
+.main-menu__list{
+    padding: 0;
+}
+
 .main-menu__anchor{
     text-decoration: none;
 }
@@ -16,6 +63,7 @@ body{
 .main-menu__item{
     font-size: 10px;
     text-transform: uppercase;
+    list-style: none;
     list-style-type: none;
 }
 
@@ -23,20 +71,47 @@ body{
 /* header end */
 
 /* body begin */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .main-title{
     text-transform: uppercase;
     text-align: center;
+    font-weight: 500;
 }
 
 .item_lista{
     font-size: 18px;
     text-transform: capitalize;
+    font-weight: 500;
 }
 
 .item_image{
     width: 400px;
     height: 400px;
 }
+
+/* form begin*/
+.form{
+    background-color: #efecec;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 15px;
+    box-shadow: 0 0 5px #989898;
+
+}
+
+/* form end */
+
+/* article begin */
+.content-page{
+    padding: 15px;
+
+}
+
+/* article end */
 
 /* body end */
 
@@ -46,6 +121,7 @@ body{
 
 }
 .footer_list{
+    background-size: cover;
     list-style-type: none;
 }
 /* footer end */
