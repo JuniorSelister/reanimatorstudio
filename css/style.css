@@ -82,18 +82,34 @@ img{
     font-weight: 500;
 }
 
-.item_lista{
+/* item begin */
+.item{
     font-size: 18px;
     text-transform: capitalize;
     font-weight: 500;
+    list-style-type: none;
 }
 
 .item_image{
-    width: 400px;
-    height: 400px;
+    margin-right: -55px;
 }
 
-/* form begin*/
+.item_list{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 40px;
+}
+
+.item_title{
+    font-size: 12px;
+    margin-top: 25px;
+    padding: 0;
+    margin-left: 12px;
+}
+
+/* item end */
+
+/* form begin */
 .form{
     background-color: #efecec;
     margin-left: -15px;
@@ -105,20 +121,31 @@ img{
 
 /* form end */
 
-/* article begin */
+/* pages begin */
 .content-page{
     padding: 15px;
-
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.content-page__subtitle{
+    text-align: center;
+}
+.content-page p{
+    color: #3a3a3a;
+    line-height: 22px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-/* article end */
+/* pages end */
 
 /* body end */
 
 /* footer begin */
 .footer{
     text-align: center;
-
+    position: fixed;
 }
 .footer_list{
     background-size: cover;
