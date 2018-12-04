@@ -1,4 +1,9 @@
 .main-menu__item{
+    font-size: 10px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.main-title{
+    text-transform: uppercase;
 }
