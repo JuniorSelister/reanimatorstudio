@@ -1,8 +1,12 @@
 .footer{
     text-align: center;
-    position: fixed;
-}
-.footer_list{
-    background-size: cover;
-    list-style-type: none;
+    position: relative;
+    color: $color-footer;
+    overflow: hidden;
+
+    &_list{
+        margin: 0 auto;
+        float: left;
+        list-style-type: none;
+    }
 }

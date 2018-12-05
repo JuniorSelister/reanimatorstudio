@@ -10,15 +10,15 @@
     }
     &__field{
         width: 50%;
-        border: 3px solid #000;
+        border: 3px solid $color-item;
         padding: 10px 5px;
     }
     &__label{
         color: #000;
     }
     &__btn{
-        border: 3px solid #000;
-        background-color: #000;
+        border: 3px solid $color-item;
+        background-color: $color-item;
         color: #fff;
         padding: 6px 12px;
         cursor: pointer;

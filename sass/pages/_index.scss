@@ -3,21 +3,20 @@
     text-transform: capitalize;
     font-weight: 500;
     list-style-type: none;
-}
+    position: relative;
 
-.item_image{
-    margin-right: -55px;
-}
-
-.item_list{
-    margin-left: -30px;
-    margin-right: 20px;
-    margin-bottom: 40px;
-}
-
-.item_title{
-    font-size: 12px;
-    margin-top: 25px;
-    padding: 0;
-    margin-left: 12px;
+    &_image{
+        margin-right: -55px;
+    }
+    &_list{
+        margin-left: -30px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+    &_title{
+        font-size: 12px;
+        margin-top: 25px;
+        padding: 0;
+        margin-left: 12px;
+    }
 }
