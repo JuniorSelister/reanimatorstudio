@@ -3,9 +3,9 @@
     position: relative;
     color: $color-footer;
     overflow: hidden;
+    width: 100%;
 
     &_list{
-        margin: 0 auto;
         float: left;
         list-style-type: none;
     }
