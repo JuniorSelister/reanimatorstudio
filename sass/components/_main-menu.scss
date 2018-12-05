@@ -1,0 +1,36 @@
+.main-menu__btn{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    background-color: #fff;
+    background-image: url('../img/mainmenu-btn.png');
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    border-color: #c4c4c4;
+    border-style: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+.main-menu__btn--close{
+    background-position: -48px 7px;
+}
+
+.main-menu__list{
+    padding: 0;
+}
+
+.main-menu__anchor{
+    text-decoration: none;
+}
+
+.main-menu__item{
+    font-size: 10px;
+    text-transform: uppercase;
+    list-style: none;
+    list-style-type: none;
+}

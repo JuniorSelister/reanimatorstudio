@@ -6,6 +6,13 @@
 @import 'base/_my-reset';
 @import 'base/_normalize';
 
+//components
+@import 'components/_content-page';
+@import 'components/_form';
+@import 'components/_logo';
+@import 'components/_main-menu';
+@import 'components/_text-align';
+
 //layout
 @import 'layout/_container';
 @import 'layout/_footer';
