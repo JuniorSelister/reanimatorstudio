@@ -412,9 +412,9 @@ template {
   text-align: center;
   position: relative;
   color: #999999;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%; }
   .footer_list {
-    margin: 0 auto;
     float: left;
     list-style-type: none; }
 
