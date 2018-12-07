@@ -14,14 +14,49 @@
     position: absolute;
     top: 15px;
     right: 15px;
+
 }
 
 .main-menu__btn--close{
     background-position: -48px 7px;
 }
 
+.item-services{
+    margin-left: 15px;
+    overflow: auto;
+    .item_list{
+        margin-right: 10px;
+        margin-bottom: 5px;
+        @media(min-width: $breakpoint-md){
+            float: left;
+            width: 33.333%;
+        }
+    }
+    .item_image .item_title{
+        padding-left: 17px;
+        padding-right: 17px;
+        @media(min-width: $breakpoint-lg){
+            width: 282.33px;
+            height: 282.33px;    
+            clear: auto;
+        }
+        @media(min-width: $breakpoint-md){
+            width: 254.98px;
+            height: 254.98px;
+            clear: auto;
+        }
+        @media(min-width: $breakpoint-sm){
+            width: 170.98px;
+            height: 170.98px;
+            clear: auto;
+        }
+        overflow: auto;
+    }
+}
 .main-menu__list{
     padding: 0;
+    float: left;
+
 }
 
 .main-menu__anchor{
