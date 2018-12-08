@@ -436,36 +436,6 @@ template {
 .main-menu__btn--close {
   background-position: -48px 7px; }
 
-.item-services {
-  margin-left: 15px;
-  overflow: auto; }
-  .item-services .item_list {
-    margin-right: 10px;
-    margin-bottom: 5px; }
-    @media (min-width: 768px) {
-      .item-services .item_list {
-        float: left;
-        width: 33.333%; } }
-  .item-services .item_image .item_title {
-    padding-left: 17px;
-    padding-right: 17px;
-    overflow: auto; }
-    @media (min-width: 992px) {
-      .item-services .item_image .item_title {
-        width: 282.33px;
-        height: 282.33px;
-        clear: auto; } }
-    @media (min-width: 768px) {
-      .item-services .item_image .item_title {
-        width: 254.98px;
-        height: 254.98px;
-        clear: auto; } }
-    @media (min-width: 576px) {
-      .item-services .item_image .item_title {
-        width: 170.98px;
-        height: 170.98px;
-        clear: auto; } }
-
 .main-menu__list {
   padding: 0;
   float: left; }
@@ -522,21 +492,60 @@ template {
   padding: 15px;
   margin-top: 10px;
   position: relative; }
+  @media (min-width: 768px) {
+    .header .logo {
+      float: left; }
+    .header .main-menu__list {
+      float: right; } }
+
+#necro {
+  font-size: 10px;
+  margin-left: 12px;
+  margin-right: 30px;
+  margin-top: -1px; }
+
+.item-services {
+  overflow: auto;
+  display: grid; }
 
 .item {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: capitalize;
   font-weight: 500;
   list-style-type: none;
-  position: relative; }
-  .item_image {
-    margin-right: -55px; }
-  .item_list {
-    margin-left: -30px;
-    margin-right: 20px;
-    margin-bottom: 40px; }
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 20px; }
+  @media (min-width: 576px) {
+    .item_image {
+      width: 1000px;
+      height: 1000px;
+      padding-right: 30px; } }
+  @media (min-width: 768px) {
+    .item_image {
+      width: 400px;
+      height: 400px; } }
+  @media (max-width: 768px) {
+    .item_image {
+      width: 600px;
+      height: 600px; } }
+  @media (min-width: 576px) {
+    .item_list {
+      margin: 0 auto;
+      float: left;
+      width: 100%; } }
+  @media (min-width: 768px) {
+    .item_list {
+      margin: 0 auto;
+      float: left;
+      width: 50%; } }
+  @media (min-width: 992px) {
+    .item_list {
+      margin: 0 auto;
+      float: left;
+      width: 33.333%;
+      padding-right: 12px; } }
   .item_title {
-    font-size: 12px;
-    margin-top: 25px;
-    padding: 0;
-    margin-left: 12px; }
+    margin-top: 10px;
+    margin-left: 12px;
+    font-size: 12px; }

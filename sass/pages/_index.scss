@@ -1,22 +1,67 @@
+#necro{
+    font-size: 10px;
+    margin-left: 12px;
+    margin-right: 30px;
+    margin-top: -1px;
+}
+
+.item-services{
+    overflow: auto;
+    display: grid;
+}
+
 .item{
-    font-size: 18px;
+    font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
     list-style-type: none;
     position: relative;
-
+    margin-right: 10px;
+    margin-bottom: 20px;
     &_image{
-        margin-right: -55px;
+        // margin-right: -55px;
+        @media(min-width: $breakpoint-sm) {
+            width: 1000px;
+            height: 1000px;
+            padding-right: 30px;
+        }
+        @media(min-width: $breakpoint-md) {
+            width: 400px;  
+            height: 400px;
+            // padding-right: 15px;
+            // width: 282.33px;  
+            // height: 282.33px;
+        }
+        @media(max-width: $breakpoint-md) {
+            width: 600px;  
+            height: 600px;
+        }
     }
+
     &_list{
-        margin-left: -30px;
-        margin-right: 20px;
-        margin-bottom: 40px;
+        // margin-right: 30px;
+        // margin-left: -30px;
+        @media(min-width: $breakpoint-sm){
+            margin: 0 auto;
+            float: left;
+            width: 100%;
+        }
+        @media(min-width: $breakpoint-md){
+            margin: 0 auto;
+            float: left;
+            width: 50%;
+        }
+        @media(min-width: $breakpoint-lg){
+            margin: 0 auto;
+            float: left;
+            width: 33.333%;
+            padding-right: 12px;
+        }
     }
     &_title{
-        font-size: 12px;
-        margin-top: 25px;
-        padding: 0;
+        margin-top: 10px;
         margin-left: 12px;
+        font-size: 12px;
+        // padding: 0;
     }
 }

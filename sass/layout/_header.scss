@@ -3,4 +3,12 @@
     padding: 15px;
     margin-top: 10px;
     position: relative;
+    @media(min-width: $breakpoint-md){
+        .logo{
+            float: left;
+        }
+        .main-menu__list{
+            float: right;
+        }
+    }
 }
