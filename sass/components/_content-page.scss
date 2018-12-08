@@ -1,22 +1,59 @@
 .content-page{
+    position: relative;
     margin-left: 10px;
     margin-right: 10px;
     padding: 15px;
     padding-top: 25px;
     padding-bottom: 25px;
     overflow: auto;
-
-    &__img{
-        float: left;
-    }
+    clear: auto;
     
-    & p{
+
+    &__subtitle{
+        padding-top: 20px;
+        font-size: 35px;
+    }
+
+    &__info {
         color: #3a3a3a;
         line-height: 22px;
         letter-spacing: 5px;
-        margin-top: 20px;
-        
-        margin-bottom: 20px;
+        padding-left: 10px;
+        text-align: center;
+        @media(min-width: $breakpoint-sm) {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            font-size: 14px;
+        }
+        @media(min-width: $breakpoint-md) {
+            margin-top: 20px;
+            padding-bottom: 20px;
+            font-size: 15px;
+        }
+        @media(min-width: $breakpoint-lg) {
+            margin-top: 30px;
+            padding-bottom: 30px;
+            font-size: 22px;
+            letter-spacing: 7px;
+        }
     }
 
+    &__img{
+        @media(min-width: $breakpoint-sm) {
+            display: block;
+            position: relative;
+            clear: auto;
+            text-align: center;
+        }
+        @media(min-width: $breakpoint-md) {
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+        @media(min-width: $breakpoint-lg) {
+            float: left;
+            padding-right: 25px;
+            width: 600px;
+            height: 600px;
+        }
+    }
 }

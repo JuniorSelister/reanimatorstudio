@@ -319,20 +319,55 @@ template {
   display: none; }
 
 .content-page {
+  position: relative;
   margin-left: 10px;
   margin-right: 10px;
   padding: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
-  overflow: auto; }
-  .content-page__img {
-    float: left; }
-  .content-page p {
+  overflow: auto;
+  clear: auto; }
+  .content-page__subtitle {
+    padding-top: 20px;
+    font-size: 35px; }
+  .content-page__info {
     color: #3a3a3a;
     line-height: 22px;
     letter-spacing: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    padding-left: 10px;
+    text-align: center; }
+    @media (min-width: 576px) {
+      .content-page__info {
+        margin-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px; } }
+    @media (min-width: 768px) {
+      .content-page__info {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        font-size: 15px; } }
+    @media (min-width: 992px) {
+      .content-page__info {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        font-size: 22px;
+        letter-spacing: 7px; } }
+  @media (min-width: 576px) {
+    .content-page__img {
+      display: block;
+      position: relative;
+      clear: auto;
+      text-align: center; } }
+  @media (min-width: 768px) {
+    .content-page__img {
+      margin-top: 10px;
+      padding-bottom: 10px; } }
+  @media (min-width: 992px) {
+    .content-page__img {
+      float: left;
+      padding-right: 25px;
+      width: 600px;
+      height: 600px; } }
 
 .form {
   background-color: #efecec;
@@ -348,6 +383,9 @@ template {
     padding: 10px 5px; }
   .form__label {
     color: #000; }
+  .form__label::after {
+    content: ':';
+    font-size: 22px; }
   .form__btn {
     border: 3px solid #000;
     background-color: #000;
@@ -423,13 +461,23 @@ template {
   float: left; }
 
 .main-menu__anchor {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #3a3a3a; }
 
 .main-menu__item {
   font-size: 10px;
   text-transform: uppercase;
   list-style: none;
-  list-style-type: none; }
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding-bottom: 5px; }
+  @media (min-width: 576px) {
+    .main-menu__item {
+      padding-bottom: 5px; } }
+
+.main-title h1 {
+  padding-top: 20px; }
 
 .content-page__subtitle {
   text-align: center; }
@@ -437,7 +485,8 @@ template {
 .main-title {
   text-transform: uppercase;
   text-align: center;
-  font-weight: 500; }
+  font-weight: 500;
+  padding-top: 35px; }
 
 .container {
   max-width: 1200px;
@@ -450,6 +499,7 @@ template {
   overflow: hidden;
   width: 100%; }
   .footer_list {
+    position: relative;
     clear: left;
     list-style-type: none; }
 

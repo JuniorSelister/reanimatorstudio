@@ -56,11 +56,12 @@
 .main-menu__list{
     padding: 0;
     float: left;
-
 }
 
 .main-menu__anchor{
     text-decoration: none;
+    color: #3a3a3a;
+    
 }
 
 .main-menu__item{
@@ -68,4 +69,14 @@
     text-transform: uppercase;
     list-style: none;
     list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 5px;
+    @media(min-width: $breakpoint-sm) {
+        padding-bottom: 5px;
+    }
+}
+
+.main-title h1{
+    padding-top: 20px;
 }
