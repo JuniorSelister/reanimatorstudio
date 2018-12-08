@@ -12,6 +12,9 @@
     &__subtitle{
         padding-top: 20px;
         font-size: 35px;
+        @media(max-width: $breakpoint-lg) {
+            padding-top:10px;
+        }
     }
 
     &__info {
@@ -31,8 +34,8 @@
             font-size: 15px;
         }
         @media(min-width: $breakpoint-lg) {
-            margin-top: 30px;
-            padding-bottom: 30px;
+            margin-top: 10px;
+            padding-bottom: 10px;
             font-size: 22px;
             letter-spacing: 7px;
         }
@@ -45,7 +48,7 @@
             clear: auto;
             text-align: center;
         }
-        @media(min-width: $breakpoint-md) {
+        @media(max-width: $breakpoint-md) {
             margin-top: 10px;
             padding-bottom: 10px;
         }
