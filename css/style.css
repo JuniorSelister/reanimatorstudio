@@ -352,7 +352,7 @@ template {
     @media (min-width: 992px) {
       .content-page__info {
         margin-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
         font-size: 22px;
         letter-spacing: 7px; } }
   @media (min-width: 576px) {
@@ -394,6 +394,7 @@ template {
     padding: 6px 12px;
     cursor: pointer;
     display: block;
+    margin-top: 25px;
     margin-left: 43%;
     font-weight: lighter;
     letter-spacing: 3px; }
@@ -424,7 +425,7 @@ template {
   background-color: #fff;
   background-image: url("../img/mainmenu-btn.png");
   background-repeat: no-repeat;
-  background-position: 7px 7px;
+  background-position: -48px 5px;
   border-color: #c4c4c4;
   border-style: solid;
   border-radius: 5px;
@@ -432,32 +433,43 @@ template {
   position: absolute;
   top: 15px;
   right: 15px; }
-
-.main-menu__btn--close {
-  background-position: -48px 7px; }
+  @media (min-width: 768px) {
+    .main-menu__btn {
+      display: none; } }
 
 .main-menu__list {
   padding: 0;
-  float: left; }
+  list-style: none;
+  float: left;
+  transition: margin 300ms ease-out; }
+  .main-menu__list li {
+    font-size: 14px; }
+  @media (min-width: 768px) {
+    .main-menu__list li {
+      display: inline-block;
+      margin: 0 10px;
+      padding-right: 30px; } }
+
+.main-menu__item {
+  font-size: 10px;
+  text-transform: uppercase;
+  list-style-type: none;
+  text-decoration: none;
+  clear: left;
+  cursor: pointer;
+  padding-bottom: 10px; }
 
 .main-menu__anchor {
   text-decoration: none;
   color: #3a3a3a; }
 
-.main-menu__item {
-  font-size: 10px;
-  text-transform: uppercase;
-  list-style: none;
-  list-style-type: none;
-  text-decoration: none;
-  cursor: pointer;
-  padding-bottom: 5px; }
-  @media (min-width: 576px) {
-    .main-menu__item {
-      padding-bottom: 5px; } }
-
-.main-title h1 {
-  padding-top: 20px; }
+@media (max-width: 767px) {
+  .main-menu__btn--closed .main-menu__btn {
+    background-position: 5px 5px; }
+  .main-menu__btn--closed .main-menu__list {
+    margin: 0;
+    height: 0;
+    overflow: hidden; } }
 
 .content-page__subtitle {
   text-align: center; }
@@ -465,15 +477,15 @@ template {
 .main-title {
   text-transform: uppercase;
   text-align: center;
-  font-weight: 500;
-  padding-top: 35px; }
+  font-weight: 500; }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: auto; }
 
 .footer {
-  margin-top: 20px;
+  padding-top: 80px;
   text-align: center;
   position: relative;
   color: #999999;
@@ -481,6 +493,8 @@ template {
   margin: 0 auto; }
   .footer__list-links {
     margin-left: -34px; }
+  .footer__column {
+    padding-top: 15px; }
   .footer_list {
     position: relative;
     display: inline;

@@ -1,50 +1,68 @@
-.main-menu__btn{
-    display: block;
-    width: 50px;
-    height: 50px;
-    text-indent: -9999px;
-    background-color: #fff;
-    background-image: url('../img/mainmenu-btn.png');
-    background-repeat: no-repeat;
-    background-position: 7px 7px;
-    border-color: #c4c4c4;
-    border-style: solid;
-    border-radius: 5px;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-
-}
-
-.main-menu__btn--close{
-    background-position: -48px 7px;
+.main-menu{
+    &__btn{
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-indent: -9999px;
+        background-color: #fff;
+        background-image: url('../img/mainmenu-btn.png');
+        background-repeat: no-repeat;
+        background-position: -48px 5px;
+        border-color: #c4c4c4;
+        border-style: solid;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        @media(min-width: $breakpoint-md){
+            display: none;
+        }
+        
+    }
 }
 
 .main-menu__list{
     padding: 0;
+    list-style: none;
     float: left;
-}
-
-.main-menu__anchor{
-    text-decoration: none;
-    color: #3a3a3a;
-    
+    transition: margin 300ms ease-out;
+    li{
+        font-size: 14px;
+    }
+    @media(min-width: $breakpoint-md){
+        li{
+            display: inline-block;
+            margin: 0 10px;
+            padding-right: 30px;
+        }
+    }
 }
 
 .main-menu__item{
     font-size: 10px;
     text-transform: uppercase;
-    list-style: none;
     list-style-type: none;
     text-decoration: none;
+    clear: left;
     cursor: pointer;
-    padding-bottom: 5px;
-    @media(min-width: $breakpoint-sm) {
-        padding-bottom: 5px;
-    }
+    padding-bottom: 10px;
+
+}
+.main-menu__anchor{
+    text-decoration: none;
+    color: #3a3a3a;
 }
 
-.main-title h1{
-    padding-top: 20px;
+@media(max-width: $breakpoint-md - 1){
+    .main-menu__btn--closed{
+        .main-menu__btn{
+            background-position: 5px 5px;
+        }
+        .main-menu__list{
+            margin: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    }
 }
