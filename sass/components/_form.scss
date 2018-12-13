@@ -18,6 +18,12 @@
         content: ':';
         font-size: 22px;
     }
+    &__issue{
+        color: #f00;
+    }
+    &__success{
+        color: #00a91e;
+    }
     &__btn{
         border: 3px solid #000;
         background-color: #000;

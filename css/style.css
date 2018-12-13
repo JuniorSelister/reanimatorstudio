@@ -387,6 +387,10 @@ template {
   .form__label::after {
     content: ':';
     font-size: 22px; }
+  .form__issue {
+    color: #f00; }
+  .form__success {
+    color: #00a91e; }
   .form__btn {
     border: 3px solid #000;
     background-color: #000;
