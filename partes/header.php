@@ -13,7 +13,7 @@
     <title><?php echo $titulo ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" />
-    
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 <body>
     <header class="header">

@@ -6,8 +6,8 @@
                 <li class="footer_list"><a href="https://www.facebook.com/depaula.conrado" target="_blank"><img src="img/ico_face.png" alt="face_icon"></a></li>
                 <li class="footer_list"><a href="https://www.instagram.com/reanimatorstudio/" target="_blank"><img src="img/ico_insta.png" alt="insta_icon"></a></li>
                 <li class="footer_list"><a href="https://vimeo.com/reanimatorstudio" target="_blank"><img src="img/ico_vimeo.png" alt="vimeo_icon"></a></li>
-                <li class="footer_list"><a href="https://dribbble.com/reanimatorstudio" target="_blank"><img src="img/ico_dribbble.png" alt="dribbble_icon"></a></li>
-                <li class="footer_list"><a href="https://www.behance.net/reanimatorstudio" target="_blank"><img src="img/ico_behance.png" alt="behance_icon"></a></li>
+                <!-- <li class="footer_list"><a href="https://dribbble.com/reanimatorstudio" target="_blank"><img src="img/ico_dribbble.png" alt="dribbble_icon"></a></li>
+                <li class="footer_list"><a href="https://www.behance.net/reanimatorstudio" target="_blank"><img src="img/ico_behance.png" alt="behance_icon"></a></li> -->
             </ul>
         </div>
     </footer>
